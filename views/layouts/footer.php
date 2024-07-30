@@ -2,7 +2,7 @@
     <div class="footer">
         <div>
             <div class="row gap-4">
-                <div class="col"><img src="/ODC/BIBLIOTECHA/public/assests/images/IMG_2771.JPG" alt="" class="img-fluid" style="border-radius: 7px;;"></div>
+                <div class="col"><img src="../BIBLIOTECHA/public/assests/images/IMG_2771.JPG" alt="" class="img-fluid" style="border-radius: 7px;;"></div>
                 <div class="col footer-links">
                     <li class="footer-link"><a href="">Home</a></li>
                     <li class="footer-link"><a href="">Catalog</a></li>

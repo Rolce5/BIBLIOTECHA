@@ -7,15 +7,15 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/public/assests/css/styles.css">
+    <link rel="stylesheet" href="../BIBLIOTECHA/public/assets/css/styles.css">
+    <link rel="stylesheet" href="../BIBLIOTECHA/public/assets/css/common.css">
 </head>
 
 <body>
     <div class="header-wrapper">
         <div class="header-content">
             <a class="logo-wrapper" href="">
-                <img src="/ODC/BIBLIOTECHA/public/assests/images/IMG_2771.JPG" alt="">
-                <!-- <img src="/public/assests/images/IMG_2771.JPG" alt=""> -->
+                <img src="../BIBLIOTECHA/public/assests/images/IMG_2771.JPG" alt="">
             </a>
             <nav class="header-nav">
                 <ul class="nav-links">
@@ -36,6 +36,3 @@
             <span class="search-icon"><i class="bi bi-search"></i></span>
         </div>
     </div>
-    git add .
-    git commit -m "home page "
-    git push origin serge
