@@ -15,7 +15,7 @@
     <div class="header-wrapper">
         <div class="header-content">
             <a class="logo-wrapper" href="">
-                <img src="../BIBLIOTECHA/public/assests/images/IMG_2771.JPG" alt="">
+                <img src="../BIBLIOTECHA/public/assets/images/IMG_2771.JPG" alt="">
             </a>
             <nav class="header-nav">
                 <ul class="nav-links">
