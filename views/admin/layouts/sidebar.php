@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="../BIBLIOTECHA/public/admin_assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../BIBLIOTECHA/public/admin_assets/css/style.css">
+
     <title>Dashboard</title>
 </head>
 
@@ -27,6 +29,7 @@
             </li>
             <li><a href="index.php?controller=Book&action=index"><i class="bx bxs-chart icon"></i>Overdue Books</a></li>
             <li><a href=""><i class="bx bxs-widget icon"></i>Borrowed Books</a></li>
+            <li><a href="index.php?controller=Category&action=index"><i class="bx bxs-widget icon"></i>Category</a></li>
             <li class="divider" data-text="manage users">Manage users</li>
             <li><a href=""><i class="bx bxs-dashboard icon"></i>Tables</a></li>
             <li>

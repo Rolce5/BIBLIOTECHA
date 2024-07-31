@@ -6,9 +6,11 @@ ini_set('display_errors', 1);
 
 require 'config.php';
 require 'Models/User.php';
+require 'Models/Category.php';
 require 'Controllers/PageController.php';
 require 'Controllers/Admin/BookController.php';
 require 'Controllers/Admin/DashboardController.php';
+require 'Controllers/Admin/CategoryController.php';
 
 // Database connection
 $db = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
