@@ -22,7 +22,7 @@ include __DIR__ . '/../layouts/sidebar.php';
                     <td><?php echo $category['name']; ?></td>
                     <td>
                         <div class="btn-group">
-                            <a href="index.php?controller=Category&action=update" class="btn btn-secondary">Edit</a>
+                            <a href="index.php?controller=Category&action=edit&id=<?php echo $category['id']; ?>" class="btn btn-secondary">Edit</a>
                             <a href="index.php?controller=Category&action=destroy&id=<?php echo $category['id']; ?>" class="btn btn-danger">Delete</a>
                         </div>
                     </td>
