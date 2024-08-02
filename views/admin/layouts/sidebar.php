@@ -18,27 +18,16 @@
         <ul class="side-menu">
             <li><a href="index.php?controller=Dashboard&action=index" class="active"><i class="bx bxs-dashboard icon"></i>Dashboard</a></li>
             <li class="divider" data-text="main">Main</li>
-            <li>
-                <a href=""><i class="bx bxs-inbox icon"></i>Elements <i class="bx bx-chevron-right icon-right"></i></a>
-                <ul class="side-dropdown">
-                    <li><a href="index.php?controller=Book&action=index">Books</a></li>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Books</a></li>
-                </ul>
-            </li>
-            <li><a href="index.php?controller=Book&action=index"><i class="bx bxs-chart icon"></i>Overdue Books</a></li>
-            <li><a href=""><i class="bx bxs-widget icon"></i>Borrowed Books</a></li>
+            <li><a href="index.php?controller=Book&action=index"><i class="bx bxs-inbox icon"></i>Elements</a></li>
+            <li><a href="index.php?controller=Inventory&action=index"><i class="bx bxs-inbox icon"></i>Inventory</a></li>
+            <li><a href=""><i class="bx bxs-chart icon"></i>Overdue Books</a></li>
+            <li><a href="index.php?controller=Borrowed&action=index"><i class="bx bxs-widget icon"></i>Borrowed Books</a></li>
+            <li><a href="index.php?controller=author&action=index"><i class="bx bxs-widget icon"></i>Authors</a></li>
             <li><a href="index.php?controller=Category&action=index"><i class="bx bxs-widget icon"></i>Category</a></li>
             <li class="divider" data-text="manage users">Manage users</li>
-            <li><a href=""><i class="bx bxs-dashboard icon"></i>Tables</a></li>
-            <li>
-                <a href=""><i class="bx bxs-inbox icon"></i>Users <i class="bx bx-chevron-right icon-right"></i></a>
-                <ul class="side-dropdown">
-                    <li><a href="">Admins</a></li>
-                    <li><a href="">Student</a></li>
-                </ul>
-            </li>
+            <li><a href="index.php?controller=User&action=index"><i class="bx bxs-inbox icon"></i>Users</a></li>
+            <li><a href="index.php?controller=Reservation&action=index"><i class="bx bxs-dashboard icon"></i>Reservations</a></li>
+            <li><a href="index.php?controller=Fine&action=index"><i class="bx bxs-inbox icon"></i>Fines</a></li>
         </ul>
     </section>
     <!-- SIDEBAR -->

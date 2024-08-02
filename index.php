@@ -8,7 +8,13 @@ require 'config.php';
 require 'Models/User.php';
 require 'Models/Category.php';
 require 'Controllers/PageController.php';
+require 'Controllers/Admin/UserController.php';
+require 'Controllers/Admin/BorrowedController.php';
 require 'Controllers/Admin/BookController.php';
+require 'Controllers/Admin/AuthorController.php';
+require 'Controllers/Admin/InventoryController.php';
+require 'Controllers/Admin/FineController.php';
+require 'Controllers/Admin/ReservationController.php';
 require 'Controllers/Admin/DashboardController.php';
 require 'Controllers/Admin/CategoryController.php';
 
