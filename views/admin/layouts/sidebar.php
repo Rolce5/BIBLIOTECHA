@@ -20,8 +20,7 @@
             <li class="divider" data-text="main">Main</li>
             <li><a href="index.php?controller=Book&action=index"><i class="bx bxs-inbox icon"></i>Elements</a></li>
             <li><a href="index.php?controller=Inventory&action=index"><i class="bx bxs-inbox icon"></i>Inventory</a></li>
-            <li><a href=""><i class="bx bxs-chart icon"></i>Overdue Books</a></li>
-            <li><a href="index.php?controller=Borrowed&action=index"><i class="bx bxs-widget icon"></i>Borrowed Books</a></li>
+            <li><a href="index.php?controller=Borrowed&action=index"><i class="bx bxs-chart icon"></i>Borrowed Books</a></li>
             <li><a href="index.php?controller=author&action=index"><i class="bx bxs-widget icon"></i>Authors</a></li>
             <li><a href="index.php?controller=Category&action=index"><i class="bx bxs-widget icon"></i>Category</a></li>
             <li class="divider" data-text="manage users">Manage users</li>
