@@ -7,6 +7,9 @@ ini_set('display_errors', 1);
 require 'config.php';
 require 'Models/User.php';
 require 'Controllers/PageController.php';
+require 'Controllers/Auth/LoginController.php';
+require 'Controllers/Auth/RegisterController.php';
+require 'Controllers/Auth/ForgotPasswordController.php';
 require 'Controllers/Admin/BookController.php';
 require 'Controllers/Admin/DashboardController.php';
 
