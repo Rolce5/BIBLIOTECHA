@@ -1,6 +1,8 @@
 .header-wrapper{
     padding : 35px 95px;
+    background-color: red;
 }
+
 
 .header-wrapper .header-content{
     display: flex;
