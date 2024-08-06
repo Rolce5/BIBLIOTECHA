@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.port": 81,
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.mount": [
+
+    ],
+    "liveServer.settings.proxy": {
+        "proxyUri": "http://localhost"
+    },
+}
