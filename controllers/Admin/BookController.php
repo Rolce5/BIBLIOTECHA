@@ -1,6 +1,5 @@
 <?php 
 
-include __DIR__ . '../BIBLIOTECHA/Models/Book.php';
 class BookController {
     public function index($db){
         $bookModel = new Book($db);
@@ -16,19 +15,27 @@ class BookController {
        
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             $isbn =  $_POST["isbn"];
+            $authorid =  $_POST["authorid"];
+            $title =  $_POST["title"];
+            $bookid =  $_POST["bookid"];
+            $image =  $_POST["image"];
+            $publication =  $_POST["publication"];
+            $genreid =  $_POST["genreid"];
+            $nocopies =  $_POST["nocopies"];
+            $descriptions =  $_POST["descriptions"];
 
-            if(!empty($isbn)){
+            if(!empty($isbn) || !empty($authorid) || !empty($title) || !empty($bookid) || !empty($publication) || !empty($genreid) || !empty($nocopies) || !empty($descriptions)){
                 $book = new Book($db);
-                $success = $book->addBook($isbn);
+                $success = $book->addBook($isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions);
 
                 if($success){
                     header("Location: index.php?controller=Book&action=index");
                 } else {
-                    die('Error storing isbn in the database');
+                    die('Error storing entries in the database');
                 }
             }
             else{
-                $error = "isbn is required";
+                $error = "Fill all entries";
                 require 'views/admin/books/create.php';
             }
             
@@ -51,10 +58,18 @@ class BookController {
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             $bookId = $_POST['book_id'];
             $isbn =  $_POST["isbn"];
+            $authorid =  $_POST["authorid"];
+            $title =  $_POST["title"];
+            $bookid =  $_POST["bookid"];
+            $image =  $_POST["image"];
+            $publication =  $_POST["publication"];
+            $genreid =  $_POST["genreid"];
+            $nocopies =  $_POST["nocopies"];
+            $descriptions =  $_POST["descriptions"];
 
-            if(!empty($isbn)){
+            if(!empty($authorid) || !empty($title) || !empty($bookid) || !empty($publication) || !empty($genreid) || !empty($nocopies) || !empty($descriptions || !empty($isbn))){
                 $book = new Book($db);
-                $success = $book->updateBook($bookId, $isbn);
+                $success = $book->updateBook($bookId, $isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions);
 
                 if($success){
                     header("Location: index.php?controller=Book&action=index");
@@ -69,5 +84,31 @@ class BookController {
             
         }
 
+    }
+}
+error_reporting(0);
+
+$msg = "";
+
+// If upload button is clicked ...
+if (isset($_POST['upload'])) {
+
+    $filename = $_FILES["uploadfile"]["name"];
+    $tempname = $_FILES["uploadfile"]["tmp_name"];
+    $folder = "./image/" . $filename;
+
+    $db = mysqli_connect("localhost", "root", "", "geeksforgeeks");
+
+    // Get all the submitted data from the form
+    $sql = "INSERT INTO image (filename) VALUES ('$filename')";
+
+    // Execute query
+    mysqli_query($db, $sql);
+
+    // Now let's move the uploaded image into the folder: image
+    if (move_uploaded_file($tempname, $folder)) {
+        echo "<h3>&nbsp; Image uploaded successfully!</h3>";
+    } else {
+        echo "<h3>&nbsp; Failed to upload image!</h3>";
     }
 }

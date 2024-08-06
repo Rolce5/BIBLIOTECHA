@@ -1,18 +1,18 @@
 <?php 
 
-    class category{
+    class Category{
         private $db;
         public function __construct($db){
             $this->db = $db;
         }
 
         public function getAllCategory(){
-            $stmt = $this->db->query("SELECT * FROM category");
+            $stmt = $this->db->query("SELECT * FROM categories");
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
         public function addCategory($name){
-            $stmt = $this->db->prepare("INSERT INTO category (name) VALUES (?)");
+            $stmt = $this->db->prepare("INSERT INTO categories (name) VALUES (?)");
 
             $success = $stmt->execute([$name]);
 
@@ -20,7 +20,7 @@
         }
 
         public function getCategoryById($id){
-            $stmt = $this->db->prepare("SELECT * FROM category WHERE id = ?");
+            $stmt = $this->db->prepare("SELECT * FROM categories WHERE id = ?");
 
             $stmt->execute([$id]);
 
@@ -29,7 +29,7 @@
 
         
         public function updateCategory($id, $name){
-            $stmt = $this->db->prepare("UPDATE category SET name = ? WHERE id = ?");
+            $stmt = $this->db->prepare("UPDATE categories SET name = ? WHERE id = ?");
 
             $success = $stmt->execute([$name, $id]);
 
@@ -37,7 +37,7 @@
         }
 
         public function deleteCategory($id){
-            $stmt = $this->db->prepare("DELETE FROM category WHERE id = ?");
+            $stmt = $this->db->prepare("DELETE FROM categories WHERE id = ?");
 
             $success = $stmt->execute([$id]);
 
