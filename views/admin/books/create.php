@@ -19,12 +19,7 @@ include __DIR__ . '/../layouts/sidebar.php';
     <form action="index.php?controller=Book&action=store" method="POST">
         <div class="row">
             <div class="col-12 col-md-4">
-                <div class="form-group">
-                    <input class="form-control" type="file" name="image">
-                    <?php if (isset($error)) : ?>
-                        <span class="text-danger"><?php echo $error; ?></span>
-                    <?php endif;  ?>
-                </div>
+
             </div>
             <div class="col-12 col-md-8">
                 <div class="row mb-3">

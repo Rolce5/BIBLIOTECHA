@@ -12,7 +12,6 @@ include __DIR__ . '/../layouts/sidebar.php';
                 <th>Author_ID</th>
                 <th>Title</th>
                 <th>Book_ID</th>
-                <th>Image</th>
                 <th>Publication_Year</th>
                 <th>Genre_ID</th>
                 <th>Number_of_Copies</th>
@@ -43,7 +42,6 @@ include __DIR__ . '/../layouts/sidebar.php';
                     <td><?php echo $book['authorid']; ?></td>
                     <td><?php echo $book['title']; ?></td>
                     <td><?php echo $book['bookid']; ?></td>
-                    <td><img src="./image/<?php echo $book['image']; ?>"></td>
                     <td><?php echo $book['publication']; ?></td>
                     <td><?php echo $book['genreid']; ?></td>
                     <td><?php echo $book['nocopies']; ?></td>

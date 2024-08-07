@@ -20,9 +20,7 @@ include __DIR__ . '/../layouts/sidebar.php';
         <input type="hidden" name="book_id" value="<?php echo $book['id']; ?>">
         <div class="row">
             <div class="col-12 col-md-4">
-                <div class="form-group">
-                    <input class="form-control" type="file" name="image" value="<?php echo $book['image']; ?>" />
-                </div>
+
             </div>
             <div class="col-12 col-md-8">
                 <div class="row mb-3">
