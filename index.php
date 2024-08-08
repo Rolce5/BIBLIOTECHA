@@ -8,6 +8,7 @@ require 'config.php';
 require 'Models/User.php';
 require 'Models/Category.php';
 require 'Models/Book.php';
+require 'Models/Author.php';
 require 'Controllers/PageController.php';
 require 'Controllers/Auth/LoginController.php';
 require 'Controllers/Auth/RegisterController.php';
@@ -15,6 +16,8 @@ require 'Controllers/Auth/ForgotPasswordController.php';
 require 'Controllers/Admin/BookController.php';
 require 'Controllers/Admin/DashboardController.php';
 require 'Controllers/Admin/CategoryController.php';
+require 'Controllers/Admin/AuthorController.php';
+
 
 // Database connection
 $db = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);

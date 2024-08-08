@@ -31,6 +31,9 @@
                     <li class="nav-items">
                         <a href="index.php?controller=Register&action=showRegisterForm" class="nav-link">Register</a>
                     </li>
+                    <li class="nav-items">
+                        <a href="index.php?controller=Page&action=showTransaction" class="nav-link">Transactions</a>
+                    </li>
                 </ul>
             </nav>
         </div>
