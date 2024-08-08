@@ -30,12 +30,9 @@
                     </li>
                     <li class="nav-items">
                         <a href="index.php?controller=Register&action=showRegisterForm" class="nav-link">Register</a>
-<<<<<<< HEAD
                     </li>
                     <li class="nav-items">
                         <a href="index.php?controller=Page&action=showTransaction" class="nav-link">Transactions</a>
-=======
->>>>>>> 53da967792afffa5f7d5aa82b8b5a39874948357
                     </li>
                 </ul>
             </nav>

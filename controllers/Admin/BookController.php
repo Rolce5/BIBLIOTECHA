@@ -6,18 +6,6 @@ class BookController {
         $books = $bookModel->getAllBook();
         require 'views/admin/books/index.php';
     }
-<<<<<<< HEAD
-    public function create(){
-        require 'views/admin/books/create.php';
-    }
-    public function edit(){
-
-
-        require 'views/admin/books/edit.php';
-    }
-}
-=======
-
     public function create(){
         require 'views/admin/books/create.php';
     }
@@ -95,4 +83,3 @@ class BookController {
 
     }
 }
->>>>>>> princewill

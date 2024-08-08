@@ -1,5 +1,3 @@
-
-
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -7,38 +5,19 @@ ini_set('display_errors', 1);
 require 'config.php';
 require 'Models/User.php';
 require 'Models/Category.php';
-<<<<<<< HEAD
-<<<<<<< HEAD
-require 'Controllers/PageController.php';
-require 'Controllers/Admin/UserController.php';
-require 'Controllers/Admin/BorrowedController.php';
-=======
 require 'Models/Book.php';
 require 'Models/Author.php';
-require 'Controllers/PageController.php';
-require 'Controllers/Auth/LoginController.php';
-require 'Controllers/Auth/RegisterController.php';
-require 'Controllers/Auth/ForgotPasswordController.php';
->>>>>>> princewill
 require 'Controllers/Admin/BookController.php';
-require 'Controllers/Admin/AuthorController.php';
-require 'Controllers/Admin/InventoryController.php';
-require 'Controllers/Admin/FineController.php';
-require 'Controllers/Admin/ReservationController.php';
-=======
 require 'Models/Register.php';
 require 'Controllers/PageController.php';
 require 'Controllers/Auth/LoginController.php';
 require 'Controllers/Auth/RegisterController.php';
 require 'Controllers/Auth/ForgotPasswordController.php';
->>>>>>> 53da967792afffa5f7d5aa82b8b5a39874948357
 require 'Controllers/Admin/DashboardController.php';
 require 'Controllers/Admin/CategoryController.php';
-<<<<<<< HEAD
-=======
 require 'Controllers/Admin/AuthorController.php';
 
->>>>>>> princewill
+
 
 // Database connection
 $db = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
