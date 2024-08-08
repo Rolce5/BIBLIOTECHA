@@ -6,4 +6,7 @@ class PageController {
     public function showTransaction(){
         require 'views/transaction_details.php';
     }
+    public function showContact(){
+        require 'views/index.php';
+    }
 }
