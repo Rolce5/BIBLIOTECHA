@@ -12,7 +12,7 @@
     <div class="container-fluid d-flex justify-content-center align-items-center vh-100 my-5">
         <div class="card p-4 shadow-sm col-md-5">
             <h2 class="mb-4 text-center">Register</h2>
-            <form>
+            <form method="POST" action="index.php?controller=Register&action=store">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name" required>
