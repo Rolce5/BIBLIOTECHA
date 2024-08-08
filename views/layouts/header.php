@@ -20,10 +20,10 @@
             <nav class="header-nav">
                 <ul class="nav-links">
                     <li class="nav-items">
-                        <a href="" class="nav-link">Home</a>
+                        <a href="index.php?controller=Page&action=index" class="nav-link">Home</a>
                     </li>
                     <li class="nav-items">
-                        <a href="" class="nav-link">Catalogue</a>
+                        <a href="index.php?controller=Page&action=showCatalogue" class="nav-link">Catalogue</a>
                     </li>
                     <li class="nav-items">
                         <a href="index.php?controller=Login&action=showLoginForm" class="nav-link">Login</a>

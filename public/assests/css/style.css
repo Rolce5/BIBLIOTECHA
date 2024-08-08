@@ -1,0 +1,71 @@
+
+body{
+
+    background-color: beige;
+    scrollbar-width: 2px;
+    scroll-behavior: smooth;
+}
+                /*-------- moving images -------------*/
+
+        .artsection, .science, .business{
+            border: 2px 0px solid rgb(170, 167, 167);
+            padding: 3px;
+            width: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bookimg,.bookimg1,.bookimg2,.bookimg3,.bookimg4,.bookimg5,.bookimg6{
+            display: flex;
+            margin-left: -100%;
+            overflow: hidden;
+        }
+        img{
+            height: 90px;
+            width: 90px;
+            margin: 2px;
+            border-radius: 2px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            width: auto;
+            padding: 16px;
+            color: rgb(20, 20, 20);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev {
+            left: 0;
+        
+          }
+          /* On hover, add a grey background color */
+          .prev:hover, .next:hover {
+            background-color: #f1f1f1;
+            color: black;
+            display: block;
+          }
+        button {
+            margin: auto;
+            background-color: #2490f5;
+            border-radius: 5px; 
+            padding: 2px;
+
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        /* ------------end of moving images------------------- */

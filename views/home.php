@@ -9,7 +9,8 @@ include __DIR__ . '/layouts/header.php';
             </div>
             <div class="col-lg-6" style="font-size: 2.4em; padding: 20px; color: white;">
                 <section>
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque cupiditate inventore, nostrum qui quia, in natus aut illo aperiam amet reiciendis corporis autem maxime beatae eum. Nisi ducimus asperiores quisquam.</p>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque cupiditate inventore, 
+                    nostrum qui quia, in natus aut illo aperiam amet reiciendis corporis autem maxime beatae eum. Nisi ducimus asperiores quisquam.</p>
                 </section>
             </div>
         </div>
