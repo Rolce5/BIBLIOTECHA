@@ -6,7 +6,7 @@
                 <div class="col footer-links">
                     <li class="footer-link"><a href="">Home</a></li>
                     <li class="footer-link"><a href="">Catalog</a></li>
-                    <li class="footer-link"><a href="">Contact</a></li>
+                    <li class="footer-link"><a href="index.php?controller=Page&action=showContact">Contact</a></li>
                 </div>
             </div>
         </div>

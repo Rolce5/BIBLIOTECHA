@@ -26,7 +26,13 @@
                         <a href="" class="nav-link">Catalogue</a>
                     </li>
                     <li class="nav-items">
-                        <a href="" class="nav-link">Login</a>
+                        <a href="index.php?controller=Login&action=showLoginForm" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="index.php?controller=Register&action=showRegisterForm" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="index.php?controller=Page&action=showTransaction" class="nav-link">Transactions</a>
                     </li>
                 </ul>
             </nav>

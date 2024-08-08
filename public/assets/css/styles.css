@@ -95,3 +95,9 @@
     background: #FFFFFF;
 }
 
+#togglePassword,
+#toggleConfirmPassword {
+    cursor: pointer;
+}
+
+
