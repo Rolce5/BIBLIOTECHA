@@ -11,10 +11,10 @@
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
-        public function addBook($isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions){
-            $stmt = $this->db->prepare("INSERT INTO books (isbn, authorid, title, bookid, image, publication, genreid, nocopies, descriptions) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        public function addBook($isbn, $authorid, $title, $bookid, $publication, $genreid, $nocopies, $descriptions){
+            $stmt = $this->db->prepare("INSERT INTO books (isbn, authorid, title, bookid, publication, genreid, nocopies, descriptions) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
-            $success = $stmt->execute([$isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions]);
+            $success = $stmt->execute([$isbn, $authorid, $title, $bookid, $publication, $genreid, $nocopies, $descriptions]);
 
             return $success;
         }
@@ -28,10 +28,10 @@
         }
 
         
-        public function updateBook($id, $isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions){
-            $stmt = $this->db->prepare("UPDATE books SET isbn = ?, authorid = ?, title = ?, bookid = ?, image = ?, publication = ?, genreid = ?, nocopies = ?, descriptions = ? WHERE id = ?");
+        public function updateBook($id, $isbn, $authorid, $title, $bookid, $publication, $genreid, $nocopies, $descriptions){
+            $stmt = $this->db->prepare("UPDATE books SET isbn = ?, authorid = ?, title = ?, bookid = ?, publication = ?, genreid = ?, nocopies = ?, descriptions = ? WHERE id = ?");
 
-            $success = $stmt->execute([$isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions, $id]);
+            $success = $stmt->execute([$isbn, $authorid, $title, $bookid, $publication, $genreid, $nocopies, $descriptions, $id]);
 
             return $success;
         }

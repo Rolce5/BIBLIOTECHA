@@ -18,7 +18,6 @@ class BookController {
             $authorid =  $_POST["authorid"];
             $title =  $_POST["title"];
             $bookid =  $_POST["bookid"];
-            $image =  $_POST["image"];
             $publication =  $_POST["publication"];
             $genreid =  $_POST["genreid"];
             $nocopies =  $_POST["nocopies"];
@@ -26,7 +25,7 @@ class BookController {
 
             if(!empty($isbn) || !empty($authorid) || !empty($title) || !empty($bookid) || !empty($publication) || !empty($genreid) || !empty($nocopies) || !empty($descriptions)){
                 $book = new Book($db);
-                $success = $book->addBook($isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions);
+                $success = $book->addBook($isbn, $authorid, $title, $bookid, $publication, $genreid, $nocopies, $descriptions);
 
                 if($success){
                     header("Location: index.php?controller=Book&action=index");
@@ -61,7 +60,6 @@ class BookController {
             $authorid =  $_POST["authorid"];
             $title =  $_POST["title"];
             $bookid =  $_POST["bookid"];
-            $image =  $_POST["image"];
             $publication =  $_POST["publication"];
             $genreid =  $_POST["genreid"];
             $nocopies =  $_POST["nocopies"];
@@ -69,7 +67,7 @@ class BookController {
 
             if(!empty($authorid) || !empty($title) || !empty($bookid) || !empty($publication) || !empty($genreid) || !empty($nocopies) || !empty($descriptions || !empty($isbn))){
                 $book = new Book($db);
-                $success = $book->updateBook($bookId, $isbn, $authorid, $title, $bookid, $image, $publication, $genreid, $nocopies, $descriptions);
+                $success = $book->updateBook($bookId, $isbn, $authorid, $title, $bookid, $publication, $genreid, $nocopies, $descriptions);
 
                 if($success){
                     header("Location: index.php?controller=Book&action=index");
