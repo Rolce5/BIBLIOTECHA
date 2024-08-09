@@ -11,4 +11,3 @@ function moveItems(containerSelector, direction) {
         container.prepend(items[items.length - 1]);
     }
 }
-

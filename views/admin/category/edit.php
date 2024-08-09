@@ -2,11 +2,9 @@
 include __DIR__ . '/../layouts/sidebar.php';
 ?>
 
-<<<<<<< HEAD
 <div>
     <form action="index.php?controller=Category&action=update" method="POST">
-        <input type="text" name="category_id" value="<?php echo $category['id']; ?>">
-=======
+        <input type="hidden" name="category_id" value="<?php echo $category['id']; ?>">
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6">
@@ -24,7 +22,6 @@ include __DIR__ . '/../layouts/sidebar.php';
 <div>
     <form action="index.php?controller=Category&action=update" method="POST">
         <input type="hidden" name="category_id" value="<?php echo $category['id']; ?>">
->>>>>>> princewill
         <div class="row mb-3>
             <div class="col-md-4">
                 <label for="name">Name</label>

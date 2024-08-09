@@ -8,16 +8,6 @@ include __DIR__ . '/../layouts/sidebar.php';
     <table class="table">
         <thead>
             <tr>
-<<<<<<< HEAD
-                <th>Book_ID</th>
-                <th>Title</th>
-                <th>Author_ID</th>
-                <th>Publication_Year</th>
-                <th>ISBN</th>
-                <th>Genre_ID</th>
-                <th>Description</th>
-                <th>Number_of_Copies</th>
-=======
                 <th>ISBN</th>
                 <th>Author_ID</th>
                 <th>Title</th>
@@ -26,16 +16,11 @@ include __DIR__ . '/../layouts/sidebar.php';
                 <th>Genre_ID</th>
                 <th>Number_of_Copies</th>
                 <th>Description</th>
->>>>>>> princewill
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
-<<<<<<< HEAD
-            <tr>
-=======
            <!------- <tr>
->>>>>>> princewill
                 <td style="width: 80px;">6754</td>
                 <td style="width: 100px;">John the Ripper</td>
                 <td style="width: 80px;">757</td>
@@ -50,9 +35,6 @@ include __DIR__ . '/../layouts/sidebar.php';
                         <a href="index.php?controller=Book&action=destroy" class="btn btn-danger">Delete</a>
                     </div>
                 </td>
-<<<<<<< HEAD
-            </tr>
-=======
             </tr>----->
             <?php foreach ($books as $book) : ?>
                 <tr>
@@ -72,7 +54,6 @@ include __DIR__ . '/../layouts/sidebar.php';
                     </td>
                 </tr>
             <?php endforeach; ?>
->>>>>>> princewill
         </tbody>
     </table>
 </div>

@@ -14,6 +14,7 @@ include __DIR__ . '/../layouts/sidebar.php';
                 <th>Birth_Date</th>
                 <th>Dead_Date</th>
                 <th>Biography</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
