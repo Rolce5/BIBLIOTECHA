@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2024 at 10:18 PM
+-- Generation Time: Aug 09, 2024 at 08:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -50,45 +50,6 @@ INSERT INTO `books` (`id`, `isbn`, `authorid`, `title`, `bookid`, `publication`,
 (5, 9993, 1002, 'The Law', 4904, '2000-01-01', 4746, 43, 'A book about the law'),
 (6, 5505, 2774, 'King', 8922, '2000-12-22', 1198, 12, 'A book about kings');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `categories`
---
-
-CREATE TABLE `categories` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `categories`
---
-
-INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(8, 'horror', '2024-07-31 11:36:40', '2024-07-31 11:36:40'),
-(9, 'fantasy', '2024-07-31 11:37:03', '2024-07-31 18:28:10'),
-(14, 'gore', '2024-07-31 18:28:18', '2024-07-31 18:28:18'),
-(15, 'isekai', '2024-08-04 07:31:30', '2024-08-04 07:31:30'),
-(16, 'fiction', '2024-08-04 21:31:09', '2024-08-04 21:31:09');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `transactions`
---
-
-CREATE TABLE `transactions` (
-  `id` int(20) NOT NULL,
-  `member_name` varchar(225) NOT NULL,
-  `book_title` varchar(225) NOT NULL,
-  `borrow_date` date NOT NULL,
-  `return_date` date NOT NULL,
-  `statuss` varchar(225) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 --
 -- Indexes for dumped tables
 --
@@ -100,18 +61,6 @@ ALTER TABLE `books`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `categories`
---
-ALTER TABLE `categories`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `transactions`
---
-ALTER TABLE `transactions`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -120,18 +69,6 @@ ALTER TABLE `transactions`
 --
 ALTER TABLE `books`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `categories`
---
-ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT for table `transactions`
---
-ALTER TABLE `transactions`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

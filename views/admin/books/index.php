@@ -35,9 +35,6 @@ include __DIR__ . '/../layouts/sidebar.php';
                         <a href="index.php?controller=Book&action=destroy" class="btn btn-danger">Delete</a>
                     </div>
                 </td>
-
-            </tr>
-
             </tr>----->
             <?php foreach ($books as $book) : ?>
                 <tr>
