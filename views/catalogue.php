@@ -20,7 +20,7 @@ include __DIR__ . '/layouts/header.php';
         <!------------ arts images --------->
         <section class="artsection">
             <div>
-                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="220">
+                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="270">
                     <div class="bookimg">
                     <div class="item" >
                         <img src="../BIBLIOTECHA/public/assets/images/cat-images/artbooks/Art_Age.jpg" alt="gfh" class="image">
@@ -101,7 +101,7 @@ include __DIR__ . '/layouts/header.php';
 
         <section class="science">
             <div>
-            <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="220">
+            <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="270">
             <div class="bookimg1">
                 <div class="item1" >
                     <img src="../BIBLIOTECHA/public/assets/images/cat-images/scienceBooks/All About Biology .jpeg" alt="gfh" class="image">
@@ -179,7 +179,7 @@ include __DIR__ . '/layouts/header.php';
          <!------------ business images --------->
          <section class="business">
             <div>
-                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="220">
+                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="270">
                     <div class="bookimg2">
                     <div class="item" >
                         <img src="../BIBLIOTECHA/public/assets/images/cat-images/bussinesbooks/Drive.jpeg" alt="gfh" class="image">
@@ -256,7 +256,7 @@ include __DIR__ . '/layouts/header.php';
              <!------------ IT images --------->
         <section class="artsection">
             <div>
-                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="220">
+                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="270">
                     <div class="bookimg3">
                     <div class="item" >
                         <img src="../BIBLIOTECHA/public/assets/images/cat-images/ITbooks/Accelerate-Building-and-Scaling-High-Performing-Technology-Organizations.png" alt="gfh" class="image">
@@ -333,7 +333,7 @@ include __DIR__ . '/layouts/header.php';
              <!------------ Law images --------->
         <section class="artsection">
             <div>
-                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="220">
+                <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="270">
                     <div class="bookimg4">
                     <div class="item" >
                         <img src="../BIBLIOTECHA/public/assets/images/cat-images/lawbooks/African Law.jpeg" alt="gfh" class="image">
@@ -409,7 +409,7 @@ include __DIR__ . '/layouts/header.php';
                 <!----------general books ---------->
             <section class="artsection">
                 <div>
-                    <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="220">
+                    <marquee behavior="fast" direction="lifetime" scrollamount="1"scrolldelay="270">
                         <div class="bookimg5">
                         <div class="item" >
                             <img src="../BIBLIOTECHA/public/assets/images/cat-images/storybooks/Jude Deveraux II.jpeg" alt="gfh" class="image">
@@ -486,7 +486,7 @@ include __DIR__ . '/layouts/header.php';
                   <!----------Story books ---------->
             <section class="artsection">
                 <div>
-                    <marquee behavior="fast" direction="lifetime" scrollamount="1" scrolldelay="220">
+                    <marquee behavior="fast" direction="lifetime" scrollamount="1" scrolldelay="270">
                         <div class="bookimg6">
                         <div class="item" >
                             <img src="../BIBLIOTECHA/public/assets/images/cat-images/storybooks/Bridgerton.jpeg" alt="gfh" class="image">

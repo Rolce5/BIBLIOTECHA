@@ -1,10 +1,6 @@
 <?php
 include __DIR__ . '/../layouts/sidebar.php';
 ?>
-<<<<<<< HEAD
-
-<h1>Edit Books Page</h1>
-=======
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6">
@@ -76,8 +72,6 @@ include __DIR__ . '/../layouts/sidebar.php';
         </div>
     </form>
 </div>
->>>>>>> princewill
-
 <?php
 include __DIR__ . '/../layouts/footer.php';
 ?>

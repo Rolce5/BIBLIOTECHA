@@ -19,13 +19,7 @@
             <li><a href="index.php?controller=Dashboard&action=index" class="active"><i class="bx bxs-dashboard icon"></i>Dashboard</a></li>
             <li class="divider" data-text="main">Main</li>
             <li><a href="index.php?controller=Book&action=index"><i class="bx bxs-inbox icon"></i>Elements</a></li>
-<<<<<<< HEAD
-            <li><a href="index.php?controller=Inventory&action=index"><i class="bx bxs-inbox icon"></i>Inventory</a></li>
-            <li><a href="index.php?controller=Borrowed&action=index"><i class="bx bxs-chart icon"></i>Borrowed Books</a></li>
-=======
-
->>>>>>> princewill
-            <li><a href="index.php?controller=author&action=index"><i class="bx bxs-widget icon"></i>Authors</a></li>
+            <li><a href="index.php?controller=Author&action=getAllAuthor"><i class="bx bxs-widget icon"></i>Authors</a></li>
             <li><a href="index.php?controller=Category&action=index"><i class="bx bxs-widget icon"></i>Category</a></li>
             <li class="divider" data-text="manage users">Manage users</li>
             <li><a href="index.php?controller=User&action=index"><i class="bx bxs-inbox icon"></i>Users</a></li>
